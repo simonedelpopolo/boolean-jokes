@@ -184,6 +184,18 @@ export async function true_false( string ) {
 }
 
 /**
+ * Converts only the strings "true" and "false" to boolean respectively.
+ *
+ * @deprecated - Just for backward compatibility with previous deprecated version @simonedelpopolo/to-bool.
+ * @param {Buffer | string} string - The given string argument.
+ * @returns {Promise|PromiseFulfilledResult<boolean>|PromiseRejectedResult<string>}
+ */
+export async function bool( string ) {
+    return boolean_jokes[ true_falseSymbol ]( string )
+        .catch( error => error )
+}
+
+/**
  * Given an object it will map the property name to the corresponding boolean value set.
  * It accepts only Object, and it will check if any of the value set for the property is a boolean and not any other type.
  *
