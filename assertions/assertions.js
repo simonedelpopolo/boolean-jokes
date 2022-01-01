@@ -2,6 +2,7 @@
 console.time( 'assertions finished ' )
 import { EventEmitter } from 'events'
 import { ok } from 'assert/strict'
+import { true_false } from '../index.js'
 
 const AssertionEvent = new EventEmitter()
 
@@ -24,10 +25,12 @@ const Assertions = {
         
         Assertions.assertion0.statement = {
             
-            '0' : ( ) => {
+            '0' : async ( ) => {
                 console.log( '    \x1b[31m executing statement', 0, '\x1b[0m\n' )
                 
                 Assertions.assertion0.statement[ '0' ].message = 'test concluded'
+                console.log( true )
+                console.log( await true_false( 'false' ) )
                 
                 return response
             },

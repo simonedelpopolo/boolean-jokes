@@ -50,8 +50,7 @@ const type__ = {
         let logicFunction
         if ( await function_( logic ) === true )
             logicFunction = false
-    
-    
+        
         // Last check logic parameter is everything else but Object
         let logicObject
         if ( await object_( logic ) === false )
@@ -123,8 +122,8 @@ Object.defineProperty( boolean_jokes, true_falseSymbol, {
             
             if ( type_check !== 'false' && type_check !== 'true' )
                 reject( `only the strings "true" or "false" are accepted parameters, given parameter value: ${ type_check }` )
-            
-            resolve( type_check )
+    
+            resolve( type_check === 'false' ? false : !!type_check )
         } )
     },
 } )
