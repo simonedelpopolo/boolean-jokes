@@ -180,6 +180,7 @@ Object.freeze( boolean_jokes )
  */
 export async function true_false( string ) {
     return boolean_jokes[ true_falseSymbol ]( string )
+        .then( boolean => boolean )
         .catch( error => error )
 }
 
@@ -192,6 +193,7 @@ export async function true_false( string ) {
  */
 export async function bool( string ) {
     return boolean_jokes[ true_falseSymbol ]( string )
+        .then( boolean => boolean )
         .catch( error => error )
 }
 
@@ -204,5 +206,7 @@ export async function bool( string ) {
  * @returns {Promise | PromiseFulfilledResult<boolean> | PromiseRejectedResult<string>}
  */
 export async function map( logic, against ){
-    return boolean_jokes[ mapSymbol ]( logic, against ).catch( error => error )
+    return boolean_jokes[ mapSymbol ]( logic, against )
+        .then( boolean => boolean )
+        .catch( error => error )
 }
