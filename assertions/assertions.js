@@ -1,6 +1,7 @@
 // A todo assertions and statements.
 console.time( 'assertions finished ' )
 import { EventEmitter } from 'events'
+// eslint-disable-next-line
 import { ok } from 'assert/strict'
 import { true_false } from '../index.js'
 
@@ -29,7 +30,7 @@ const Assertions = {
                 console.log( '    \x1b[31m executing statement', 0, '\x1b[0m\n' )
                 
                 Assertions.assertion0.statement[ '0' ].message = 'test concluded'
-                console.log( true )
+                
                 console.log( await true_false( 'false' ) )
                 
                 return response
