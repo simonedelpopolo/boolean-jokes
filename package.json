@@ -1,6 +1,6 @@
 {
   "name": "boolean-jokes",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Some useful functions to work with boolean. javascript ESM module",
   "type": "module",
   "engines": {
