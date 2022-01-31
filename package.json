@@ -1,6 +1,6 @@
 {
   "name": "boolean-jokes",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Some useful functions to work with boolean. javascript ESM module",
   "type": "module",
   "engines": {
@@ -22,7 +22,7 @@
     "assertions": "cd ./assertions/ && node ./assertions.js"
   },
   "dependencies": {
-    "oftypes": "^0.2.2"
+    "oftypes": "latest"
   },
   "devDependencies": {
     "eslint": "^8.4.1",
