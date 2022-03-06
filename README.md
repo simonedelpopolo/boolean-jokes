@@ -1,8 +1,8 @@
 # boolean-jokes
 
-> ℹ️ Some useful functions to work with boolean.
+> ℹ Some useful functions to work with boolean.
 
-> ℹ️ Javascript ESM module.
+**Javascript ESModule.**
 
 ___
 
@@ -46,8 +46,8 @@ ___
 
 Given an object it will map the property name to the corresponding boolean value set.
 
-> ℹ️ It accepts only type object for the `logic` parameter, and it will check if any of the value set for the property is a boolean and not any other type.  
-> ℹ️It accepts only type string or number for the `against` parameter
+> ℹ It accepts only type object for the `logic` parameter, and it will check if any of the value set for the property is a boolean and not any other type.  
+> ℹ It accepts only type string or number for the `against` parameter
 
 This will return false
 

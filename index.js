@@ -1,32 +1,4 @@
-import {
-    map as m, mapSymbol,
-    true_false as t_f, true_falseSymbol
-} from './lib/boolean-jokes/exporter.js'
-
-/**
- * Converts only the strings "true" and "false" to boolean respectively.
- *
- * @param {Buffer | string} string - The given string argument.
- * @returns {Promise|PromiseFulfilledResult<boolean>|PromiseRejectedResult<string>}
- */
-export async function true_false( string ) {
-    return t_f[ true_falseSymbol ]( string )
-        .then( boolean => boolean )
-        .catch( error => error )
-}
-
-/**
- * Converts only the strings "true" and "false" to boolean respectively.
- *
- * @deprecated - Just for backward compatibility with previous deprecated version @simonedelpopolo/to-bool.
- * @param {Buffer | string} string - The given string argument.
- * @returns {Promise|PromiseFulfilledResult<boolean>|PromiseRejectedResult<string>}
- */
-export async function bool( string ) {
-    return t_f[ true_falseSymbol ]( string )
-        .then( boolean => boolean )
-        .catch( error => error )
-}
+import { boolean_jokes__, map__, true_false__ } from './lib/exporter.js'
 
 /**
  * Given an object it will map the property name to the corresponding boolean value set.
@@ -37,7 +9,17 @@ export async function bool( string ) {
  * @returns {Promise | PromiseFulfilledResult<boolean> | PromiseRejectedResult<string>}
  */
 export async function map( logic, against ){
-    return m[ mapSymbol ]( logic, against )
-        .then( boolean => boolean )
-        .catch( error => error )
+    return map__( logic, against )
 }
+
+/**
+ * Converts only the strings "true" and "false" to boolean respectively.
+ *
+ * @param {Buffer | string} string - The given string argument.
+ * @returns {Promise|PromiseFulfilledResult<boolean>|PromiseRejectedResult<string>}
+ */
+export async function true_false( string ) {
+    return true_false__( string )
+}
+
+Object.freeze( boolean_jokes__ )
