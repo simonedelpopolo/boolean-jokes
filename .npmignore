@@ -4,3 +4,4 @@
 .eslintignore
 assertions
 package-lock.json
+.github
