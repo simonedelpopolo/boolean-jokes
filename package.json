@@ -1,6 +1,6 @@
 {
   "name": "boolean-jokes",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Some useful functions to work with boolean. javascript ESModule",
   "type": "module",
   "engines": {
@@ -19,11 +19,11 @@
   },
   "devDependencies": {
     "eslint": "^8.10.0",
-    "eslint-plugin-jsdoc": "^37.9.6",
-    "trythistrythat": "^0.0.15"
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "trythistrythat": "^0.0.17"
   },
   "dependencies": {
-    "oftypes": "^0.6.6"
+    "oftypes": "^0.7.0"
   },
   "publishConfig": {
     "access": "public"
