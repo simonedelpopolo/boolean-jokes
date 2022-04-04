@@ -1,15 +1,9 @@
 {
   "name": "boolean-jokes",
-  "version": "1.5.3",
+  "version": "1.5.4",
+  "license": "Apache-2.0",
   "description": "Some useful functions to work with boolean. javascript ESModule",
   "type": "module",
-  "engines": {
-    "node": ">=v16.14.0 <17"
-  },
-  "os": [
-    "linux",
-    "darwin"
-  ],
   "main": "index.js",
   "scripts": {
     "eslint": "npx eslint . --ext .js",
@@ -18,28 +12,14 @@
     "assertions": "cd ./assertions/ && node ./assertions.js"
   },
   "devDependencies": {
-    "eslint": "^8.11.0",
-    "eslint-plugin-jsdoc": "^38.0.5",
-    "trythistrythat": "latest"
+    "eslint": "^8.12.0",
+    "eslint-plugin-jsdoc": "^38.1.6",
+    "trythistrythat": "^1.2.4"
   },
   "dependencies": {
-    "oftypes": "latest"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "homepage": "https://github.com/simonedelpopolo/boolean-jokes#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simonedelpopolo/boolean-jokes.git"
-  },
-  "bugs": {
-    "email": "simonedelpopolo@outlook.com",
-    "url": "https://github.com/simonedelpopolo/boolean-jokes/issues"
+    "oftypes": "^1.7.1"
   },
   "keywords": [
-    "string",
-    "to boolean",
     "convertion",
     "utility",
     "esm",
@@ -51,5 +31,13 @@
     "email": "simonedelpopolo@outlook.com",
     "url": "https://github.com/simonedelpopolo"
   },
-  "license": "Apache-2.0"
+  "homepage": "https://github.com/simonedelpopolo/boolean-jokes#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonedelpopolo/boolean-jokes.git"
+  },
+  "bugs": {
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/simonedelpopolo/boolean-jokes/issues"
+  }
 }

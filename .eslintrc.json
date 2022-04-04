@@ -6,9 +6,8 @@
     "jsdoc"
   ],
   "env": {
-    "es2021": true,
-    "node": true,
-    "browser": true
+    "es2022": true,
+    "node": true
   },
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -99,6 +98,7 @@
         "after": true
       }
     ],
+    "no-trailing-spaces": ["error", { "ignoreComments": true }],
     "switch-colon-spacing": "warn",
     "no-fallthrough": [
       "error",

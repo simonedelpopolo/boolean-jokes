@@ -1,7 +1,6 @@
 .idea
-.gitignore
+.git
+.github
+assertions
 .eslintrc.json
 .eslintignore
-assertions
-package-lock.json
-.github

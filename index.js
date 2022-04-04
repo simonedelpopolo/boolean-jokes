@@ -1,4 +1,8 @@
-import { boolean_jokes__, map__, true_false__ } from './lib/exporter.js'
+import {
+    boolean_jokes__,
+    map__,
+    true_false__
+} from './lib/exporter.js'
 
 /**
  * Given an object it will map the property name to the corresponding boolean value set.
