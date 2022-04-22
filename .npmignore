@@ -1,6 +1,9 @@
 .idea
 .git
 .github
-assertions
+tests
 .eslintrc.json
 .eslintignore
+.gitlab-ci.yml
+.nycrc
+coverage

@@ -1,23 +1,22 @@
 {
   "name": "boolean-jokes",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "license": "Apache-2.0",
   "description": "Some useful functions to work with boolean. javascript ESModule",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "eslint": "npx eslint . --ext .js",
-    "eslint-fix": "npx eslint --fix . --ext .js",
-    "unit-tests": "npx 4t unit",
-    "assertions": "cd ./assertions/ && node ./assertions.js"
+    "lint": "npx eslint . --ext .js",
+    "test": "npx 4t unit",
+    "coverage": "npx 4t --coverage unit"
   },
   "devDependencies": {
-    "eslint": "^8.12.0",
-    "eslint-plugin-jsdoc": "^38.1.6",
-    "trythistrythat": "^1.2.4"
+    "eslint": "^8.13.0",
+    "eslint-plugin-jsdoc": "^39.2.7",
+    "trythistrythat": "^1.8.3"
   },
   "dependencies": {
-    "oftypes": "^1.7.1"
+    "oftypes": "^1.8.2"
   },
   "keywords": [
     "convertion",
